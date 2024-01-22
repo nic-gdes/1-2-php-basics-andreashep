@@ -35,26 +35,21 @@ class Car {
     public $year;
     public $make;
     public $model;
-    }
 
-    //constructor function
-    function __construct($year, $make, $model) {
-      $this->year = $year;
-      $this->make = $make;
-      $this->model = $model;
-    
-    }
 
-    //create object of type car
-$myCar = new Car();
+   // Constructor function
+   function __construct($year, $make, $model) {
+    $this->year = $year;
+    $this->make = $make;
+    $this->model = $model;
+}
+}
 
-// Assign values to the properties
-$myCar->Year = 1968;
-$myCar->Make = "Ford";
-$myCar->Model = "Mustang";
+// Create object of type Car
+$my_Car = new Car(1968, "Ford", "Mustang");
 
 // Echo the phrase using the object's properties
-echo "I have a $myCar->Year $myCar->Make $myCar->Model";
+echo "I have a " . $my_Car->year . " " . $my_Car->make . " " . $my_Car->model;
 ?></section>
     
 
@@ -69,7 +64,7 @@ if ($integer >= 10) {
     echo "The statement is true!";
 } else {
     // If false, print the following
-    echo "The statement is not true!";
+    echo "The statement is false!";
 }
 
 ?></h2></section>
@@ -89,7 +84,7 @@ for ($i = 0; $i < count($my_array); $i++) {
 
 <section><h3><?php
  //Create foreach loops using array from previous exercise
- $my_array = array("Hello", "I'm", "still", "cold");
+ $my_array = array("Hello", "this", "is", "a", "cold", "world");
 
 
 // Foreach loop
