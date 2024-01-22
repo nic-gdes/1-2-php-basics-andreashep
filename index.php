@@ -89,7 +89,7 @@ for ($i = 0; $i < count($my_array); $i++) {
 
 <section><h3><?php
  //Create foreach loops using array from previous exercise
- $my_array = array("Hello", "I`'m", "still", "cold");
+ $my_array = array("Hello", "I'm", "still", "cold");
 
 
 // Foreach loop
